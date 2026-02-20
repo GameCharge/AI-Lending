@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ИИ-Анкета24 — Опросы сотрудников в Telegram с ИИ-аналитикой</title>
+    <meta name="description" content="Запускайте профессиональные опросы и eNPS в Telegram за 1 минуту. Искусственный интеллект сам составит анкету и проанализирует ответы сотрудников.">
+    <meta name="keywords" content="опросы сотрудников, telegram бот для опросов, ИИ аналитика, вовлеченность персонала, HR инструменты, eNPS">
+
+    <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-touch-icon.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://REAL URL/"> 
+    <meta property="og:title" content="ИИ-Анкета24: Умные опросы прямо в Telegram">
+    <meta property="og:description" content="Повысьте вовлеченность команды до 85%. ИИ-аналитика и мгновенные отчеты без лишних платформ.">
+    <meta property="og:image" content="/static/img/og-image.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="ИИ-Анкета24: Умные опросы прямо в Telegram">
+    <meta property="twitter:description" content="Запускайте опросы текстом или голосом. Автоматические отчеты в чате.">
+    <meta property="twitter:image" content="/static/img/og-image.png">
+
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__wrapper">
+            <div class="logo">
+                <img src="/static/img/logo.png" alt="ИИ-Анкета24" class="logo__rect">
+                <div class="logo__text">ИИ-Анкета<span>24</span></div>
+            </div>
+            <div class="nav-overlay" id="nav-overlay"></div>
+            <nav class="nav" id="main-nav">
+                <div class="nav__header">
+                    <div class="logo">
+                        <img src="/static/img/logo.png" alt="ИИ-Анкета24" class="logo__rect">
+                        <div class="logo__text">ИИ-Анкета<span>24</span></div>
+                    </div>
+                </div>
+                <div class="nav__links">
+                    <a href="#functions" class="nav__link">Функции</a>
+                    <a href="#advantages" class="nav__link">Преимущество</a>
+                    <a href="#contacts" class="nav__link">Контакты</a>
+                </div>
+                <div class="nav__footer">
+                    © 2026 ИИ-Анкета24
+                </div>
+            </nav>
+            <div class="header__actions">
+                <button class="btn btn--small btn--desktop">Запустить бота</button>
+                <button class="burger" id="burger-btn" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero animate-in">
+        <div class="hero__bg-image"></div> <div class="container hero__wrapper">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    Запускайте опросы сотрудников за 1 минуту <br>
+                    <span class="highlight">прямо в Telegram</span>
+                </h1>
+                <p class="hero__subtitle">
+                    Без отдельных платформ и сложного внедрения. <br>
+                    Автоматическая генерация анкеты и аналитика в чате.
+                </p>
+                <button class="btn btn--large">Запустить бесплатно</button>
+            </div>
+            
+            <div class="hero__mockup">
+                <img src="/static/img/phone.png" alt="iPhone Mockup">
+            </div>
+        </div>
+    </section>
+    <section class="info-section animate-in" id="functions">
+      <div class="container">
+          <div class="problems">
+              <h2 class="section-title">Опросы не должны быть сложными</h2>
+              <p class="section-subtitle">Традиционные методы крадут время и дают низкий отклик</p>
+              
+              <div class="problems__grid">
+                  <div class="problem-pill">Google Forms, которые игнорируют</div>
+                  <div class="problem-pill">Ручная обработка Excel</div>
+                  <div class="problem-pill">Низкая вовлеченность</div>
+              </div>
+          </div>
+  
+          <div class="features">
+              <div class="features__header">
+                  <div class="logo-accent">ИИ-Анкета<span>24</span></div>
+                  <h2 class="section-title">Простой способ запустить опрос</h2>
+              </div>
+  
+              <div class="features__grid">
+                  <div class="feature-card">
+                      <div class="feature-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 91 91" fill="none">
+                                <path d="M45.5 19.0385V45.5L65.3462 65.3462M88.5 45.5C88.5 56.9043 83.9697 67.8415 75.9056 75.9056C67.8415 83.9697 56.9043 88.5 45.5 88.5C34.0957 88.5 23.1585 83.9697 15.0944 75.9056C7.03034 67.8415 2.5 56.9043 2.5 45.5C2.5 34.0957 7.03034 23.1585 15.0944 15.0944C23.1585 7.03034 34.0957 2.5 45.5 2.5C56.9043 2.5 67.8415 7.03034 75.9056 15.0944C83.9697 23.1585 88.5 34.0957 88.5 45.5Z" stroke="#20D940" stroke-width="5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                      <div class="feature-card__text">
+                          <h3>Экономия времени</h3>
+                          <p>Текстом или голосом <br>(удобство)</p>
+                      </div>
+                  </div>
+  
+                  <div class="feature-card">
+                      <div class="feature-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 92 92" fill="none">
+                            <path d="M88.547 4.16523C88.5118 3.99543 88.4289 3.83921 88.3081 3.71495C88.1872 3.59069 88.0334 3.50356 87.8647 3.46382C76.6224 0.711964 50.6522 10.5173 36.5672 24.6034C34.057 27.0952 31.7681 29.8007 29.7263 32.6893C25.3848 32.2962 21.0434 32.6273 17.3469 34.2411C6.90878 38.8345 3.87182 50.8309 3.0242 55.9808C2.97828 56.263 2.99789 56.552 3.08153 56.8253C3.16516 57.0987 3.31057 57.3491 3.50648 57.5572C3.7024 57.7653 3.94355 57.9254 4.21126 58.0252C4.47897 58.125 4.76604 58.1618 5.05022 58.1326L21.8104 56.2912C21.8218 57.5563 21.8977 58.8201 22.0378 60.0775C22.1252 60.9467 22.5127 61.7581 23.1335 62.3721L29.6229 68.8669C30.237 69.4886 31.0486 69.8765 31.9177 69.9635C33.1666 70.1029 34.4217 70.1789 35.6782 70.1911L33.8404 86.9505C33.8117 87.2346 33.8486 87.5214 33.9483 87.7889C34.0481 88.0564 34.2079 88.2973 34.4156 88.4931C34.6232 88.6889 34.873 88.8343 35.1457 88.9181C35.4184 89.0018 35.7067 89.0217 35.9883 88.9762C41.1361 88.1485 53.1475 85.1091 57.7102 74.6644C59.3227 70.9608 59.6535 66.6385 59.2814 62.3142C62.1762 60.2726 64.8871 57.9817 67.3834 55.4677C81.52 41.398 91.2552 15.9775 88.547 4.16523ZM54.8179 37.2413C53.5831 36.0058 52.7422 34.4316 52.4014 32.7177C52.0606 31.0038 52.2353 29.2273 52.9034 27.6128C53.5715 25.9984 54.703 24.6184 56.1547 23.6475C57.6064 22.6767 59.3133 22.1584 61.0593 22.1584C62.8053 22.1584 64.5121 22.6767 65.9639 23.6475C67.4156 24.6184 68.5471 25.9984 69.2152 27.6128C69.8833 29.2273 70.0579 31.0038 69.7172 32.7177C69.3764 34.4316 68.5354 36.0058 67.3007 37.2413C66.4817 38.0627 65.5088 38.7144 64.4378 39.159C63.3669 39.6037 62.2188 39.8325 61.0593 39.8325C59.8998 39.8325 58.7517 39.6037 57.6807 39.159C56.6098 38.7144 55.6369 38.0627 54.8179 37.2413Z" stroke="#20D940" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15.9837 65C13.8031 65.2677 11.7743 66.2563 10.2197 67.8087C6.36531 71.6762 6 86 6 86C6 86 20.3325 85.6347 24.1891 81.7759C25.7478 80.2238 26.7381 78.1916 27 76.0075" stroke="#20D940" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                      <div class="feature-card__text">
+                          <h3>Высокая вовлеченность</h3>
+                          <p>Текстом или голосом <br>(удобство)</p>
+                      </div>
+                  </div>
+  
+                  <div class="feature-card">
+                      <div class="feature-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 91 91" fill="none">
+                            <path d="M89 46C89 69.7489 69.7489 89 46 89H3V46C3 22.2511 22.2511 3 46 3C69.7489 3 89 22.2511 89 46Z" stroke="#20D940" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M24.5 47.05L37.4 59.95L65.35 32" stroke="#20D940" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                      <div class="feature-card__text">
+                          <h3>Интеграция в мессенджер</h3>
+                          <p>Текстом или голосом <br>(удобство)</p>
+                      </div>
+                  </div>
+  
+                  <div class="feature-card">
+                      <div class="feature-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 92 92" fill="none">
+                            <path d="M24.5 67.5V40.625M46 67.5V24.5M67.5 67.5V56.75M78.25 3H13.75C10.8989 3 8.16462 4.13259 6.1486 6.1486C4.13259 8.16462 3 10.8989 3 13.75V78.25C3 81.1011 4.13259 83.8354 6.1486 85.8514C8.16462 87.8674 10.8989 89 13.75 89H78.25C81.1011 89 83.8354 87.8674 85.8514 85.8514C87.8674 83.8354 89 81.1011 89 78.25V13.75C89 10.8989 87.8674 8.16462 85.8514 6.1486C83.8354 4.13259 81.1011 3 78.25 3Z" stroke="#20D940" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                      <div class="feature-card__text">
+                          <h3>ИИ-аналитика ответов</h3>
+                          <p>Текстом или голосом <br>(удобство)</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section class="workflow animate-in" id="advantages">
+    <div class="container">
+        <h2 class="workflow__title">Как это работает?</h2>
+        
+        <div class="workflow__grid">
+            <div class="workflow__item">
+              <div class="workflow__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="96" height="112" viewBox="0 0 126 167" fill="none">
+                    <path d="M38 29.8182C38 23.236 40.6339 16.9234 45.3223 12.2691C50.0107 7.61477 56.3696 5 63 5C69.6304 5 75.9893 7.61477 80.6777 12.2691C85.3661 16.9234 88 23.236 88 29.8182V71.1818C88 77.764 85.3661 84.0766 80.6777 88.7309C75.9893 93.3852 69.6304 96 63 96C56.3696 96 50.0107 93.3852 45.3223 88.7309C40.6339 84.0766 38 77.764 38 71.1818V29.8182Z" stroke="#46FF65" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5 71C5 86.3584 11.1107 101.088 21.9878 111.948C32.8649 122.808 47.6174 128.909 63 128.909M63 128.909C78.3826 128.909 93.1351 122.808 104.012 111.948C114.889 101.088 121 86.3584 121 71M63 128.909V162M29.8571 162H96.1429" stroke="#46FF65" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+              </div>
+              <h3 class="workflow__step-title">Запрос</h3>
+              <p class="workflow__step-text">Опишите задачу<br>текстом или голосом</p>
+            </div>
+          
+            <div class="workflow__item">
+              <div class="workflow__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="104" height="104" viewBox="0 0 177 168" fill="none">
+                    <mask id="path-1-outside-1_31_3" maskUnits="userSpaceOnUse" x="35.0015" y="61" width="102" height="47" fill="black">
+                    <rect fill="white" x="35.0015" y="61" width="102" height="47"/>
+                    <path d="M37.5135 107L57.4815 62.2H67.7215L87.7535 107H76.8735L60.4895 67.448H64.5855L48.1375 107H37.5135ZM47.4975 97.4L50.2495 89.528H73.2895L76.1055 97.4H47.4975ZM93.6945 107V62.2H103.998V91.384L125.374 62.2H135.102V107H124.862V77.88L103.486 107H93.6945Z"/>
+                    </mask>
+                    <path d="M37.5135 107L57.4815 62.2H67.7215L87.7535 107H76.8735L60.4895 67.448H64.5855L48.1375 107H37.5135ZM47.4975 97.4L50.2495 89.528H73.2895L76.1055 97.4H47.4975ZM93.6945 107V62.2H103.998V91.384L125.374 62.2H135.102V107H124.862V77.88L103.486 107H93.6945Z" fill="#41F25F"/>
+                    <path d="M37.5135 107L36.6001 106.593L35.9729 108H37.5135V107ZM57.4815 62.2V61.2H56.8323L56.5681 61.7929L57.4815 62.2ZM67.7215 62.2L68.6344 61.7918L68.3697 61.2H67.7215V62.2ZM87.7535 107V108H89.296L88.6664 106.592L87.7535 107ZM76.8735 107L75.9496 107.383L76.2053 108H76.8735V107ZM60.4895 67.448V66.448H58.9928L59.5656 67.8307L60.4895 67.448ZM64.5855 67.448L65.5088 67.832L66.0843 66.448H64.5855V67.448ZM48.1375 107V108H48.8046L49.0608 107.384L48.1375 107ZM47.4975 97.4L46.5535 97.07L46.0885 98.4H47.4975V97.4ZM50.2495 89.528V88.528H49.5397L49.3055 89.198L50.2495 89.528ZM73.2895 89.528L74.231 89.1912L73.9938 88.528H73.2895V89.528ZM76.1055 97.4V98.4H77.5252L77.047 97.0632L76.1055 97.4ZM37.5135 107L38.4268 107.407L58.3948 62.6071L57.4815 62.2L56.5681 61.7929L36.6001 106.593L37.5135 107ZM57.4815 62.2V63.2H67.7215V62.2V61.2H57.4815V62.2ZM67.7215 62.2L66.8086 62.6082L86.8406 107.408L87.7535 107L88.6664 106.592L68.6344 61.7918L67.7215 62.2ZM87.7535 107V106H76.8735V107V108H87.7535V107ZM76.8735 107L77.7973 106.617L61.4133 67.0653L60.4895 67.448L59.5656 67.8307L75.9496 107.383L76.8735 107ZM60.4895 67.448V68.448H64.5855V67.448V66.448H60.4895V67.448ZM64.5855 67.448L63.6621 67.064L47.2141 106.616L48.1375 107L49.0608 107.384L65.5088 67.832L64.5855 67.448ZM48.1375 107V106H37.5135V107V108H48.1375V107ZM47.4975 97.4L48.4414 97.73L51.1934 89.858L50.2495 89.528L49.3055 89.198L46.5535 97.07L47.4975 97.4ZM50.2495 89.528V90.528H73.2895V89.528V88.528H50.2495V89.528ZM73.2895 89.528L72.3479 89.8648L75.1639 97.7368L76.1055 97.4L77.047 97.0632L74.231 89.1912L73.2895 89.528ZM76.1055 97.4V96.4H47.4975V97.4V98.4H76.1055V97.4ZM93.6945 107H92.6945V108H93.6945V107ZM93.6945 62.2V61.2H92.6945V62.2H93.6945ZM103.998 62.2H104.998V61.2H103.998V62.2ZM103.998 91.384H102.998V94.4416L104.805 91.9749L103.998 91.384ZM125.374 62.2V61.2H124.867L124.568 61.6091L125.374 62.2ZM135.102 62.2H136.102V61.2H135.102V62.2ZM135.102 107V108H136.102V107H135.102ZM124.862 107H123.862V108H124.862V107ZM124.862 77.88H125.862V74.8278L124.056 77.2883L124.862 77.88ZM103.486 107V108H103.993L104.293 107.592L103.486 107ZM93.6945 107H94.6945V62.2H93.6945H92.6945V107H93.6945ZM93.6945 62.2V63.2H103.998V62.2V61.2H93.6945V62.2ZM103.998 62.2H102.998V91.384H103.998H104.998V62.2H103.998ZM103.998 91.384L104.805 91.9749L126.181 62.7909L125.374 62.2L124.568 61.6091L103.192 90.7931L103.998 91.384ZM125.374 62.2V63.2H135.102V62.2V61.2H125.374V62.2ZM135.102 62.2H134.102V107H135.102H136.102V62.2H135.102ZM135.102 107V106H124.862V107V108H135.102V107ZM124.862 107H125.862V77.88H124.862H123.862V107H124.862ZM124.862 77.88L124.056 77.2883L102.68 106.408L103.486 107L104.293 107.592L125.669 78.4717L124.862 77.88ZM103.486 107V106H93.6945V107V108H103.486V107Z" fill="#41F25F" mask="url(#path-1-outside-1_31_3)"/>
+                    <path d="M158.248 58.2149L155.191 56.5054L154.247 55.969C151.97 54.598 150.052 52.702 148.651 50.4383C148.5 50.2121 148.367 49.969 148.099 49.4998C146.299 46.5997 145.424 43.2168 145.593 39.8042L145.644 36.2428C145.744 30.5444 145.794 27.6785 144.992 25.1142C144.283 22.8327 143.095 20.7298 141.509 18.9466C139.721 16.9355 137.24 15.4941 132.27 12.6282L128.144 10.2399C123.199 7.38237 120.718 5.94941 118.087 5.40471C115.762 4.92212 113.362 4.94212 111.045 5.46337C108.431 6.04996 105.983 7.52483 101.097 10.4578L101.072 10.4746L98.1146 12.2427C97.6469 12.5276 97.4046 12.6617 97.1707 12.7958C94.8486 14.0947 92.2591 14.807 89.5945 14.8908C89.3272 14.9075 89.0516 14.9075 88.5086 14.9075L87.4227 14.8991C84.7572 14.814 82.1508 14.0899 79.8214 12.7874C79.5875 12.6617 79.362 12.5193 78.8942 12.2343L75.9122 10.441C70.9922 7.47455 68.528 5.99968 65.8968 5.40471C63.5718 4.88261 61.1623 4.86547 58.8301 5.35443C56.1906 5.90751 53.718 7.34885 48.7647 10.2315L48.7396 10.2399L44.6633 12.6114L44.6215 12.6449C39.7099 15.4941 37.2458 16.9355 35.4749 18.9383C33.8968 20.7181 32.7151 22.815 32.0084 25.0891C31.2149 27.6617 31.2566 30.5277 31.3569 36.2595L31.4153 39.8126C31.4153 40.3573 31.4404 40.6254 31.432 40.8852C31.3888 43.9298 30.5196 46.9051 28.9178 49.4914C28.6421 49.9607 28.5168 50.1953 28.3748 50.4132C26.9664 52.6939 25.0328 54.6022 22.7365 55.9774L21.8009 56.5054L18.7855 58.1813C13.7569 60.9718 11.2427 62.3713 9.42169 64.3657C7.8027 66.1241 6.57795 68.21 5.82987 70.483C4.99456 73.0557 4.99456 75.93 5.00291 81.6954L5.01962 86.4132C5.02797 92.1367 5.04468 94.9943 5.88834 97.5501C6.63331 99.8091 7.84919 101.883 9.4551 103.634C11.2761 105.612 13.7653 107.003 18.7521 109.785L21.7425 111.452C22.252 111.737 22.511 111.871 22.7532 112.022C25.3708 113.596 27.5086 115.86 28.9345 118.567L29.4941 119.573C30.9051 122.245 31.5689 125.251 31.4153 128.271L31.3569 131.681C31.2566 137.43 31.2149 140.313 32.0168 142.885C32.7268 145.165 33.9129 147.268 35.5 149.053C37.2875 151.064 39.7768 152.497 44.7385 155.371L48.8649 157.76C53.8183 160.617 56.2908 162.05 58.922 162.595C61.2467 163.078 63.6472 163.058 65.9636 162.536C68.5865 161.95 71.034 160.475 75.9372 157.525L78.8942 155.749L79.8381 155.195C82.1603 153.905 84.7497 153.184 87.4143 153.101L88.5002 153.092H89.5861C92.2424 153.176 94.8486 153.905 97.1874 155.204L97.9559 155.665L101.097 157.559C106.025 160.525 108.481 162 111.112 162.587C113.436 163.114 115.845 163.137 118.179 162.654C120.81 162.101 123.299 160.651 128.253 157.768L132.387 155.363C137.299 152.497 139.763 151.064 141.534 149.061C143.121 147.276 144.29 145.182 145 142.911C145.794 140.355 145.752 137.514 145.652 131.866L145.585 128.179V127.114C145.624 124.068 146.491 121.09 148.091 118.5L148.634 117.578C150.042 115.297 151.976 113.389 154.272 112.014L155.191 111.503L155.208 111.494L158.223 109.818C163.252 107.019 165.766 105.628 167.596 103.634C169.216 101.874 170.436 99.7792 171.179 97.5166C172.014 94.9607 172.014 92.0948 171.998 86.3965L171.981 81.5864C171.973 75.8629 171.964 72.997 171.121 70.4411C170.372 68.1845 169.153 66.1134 167.545 64.3657C165.733 62.3881 163.244 60.997 158.265 58.2232L158.248 58.2149Z" stroke="#46FF65" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+              </div>
+              <h3 class="workflow__step-title">Генерация ИИ</h3>
+              <p class="workflow__step-text">ИИ создаёт готовую<br>анкету за 30 секунд</p>
+            </div>
+          
+            <div class="workflow__item">
+              <div class="workflow__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="96" height="112" viewBox="0 0 179 167" fill="none">
+                    <path d="M127.055 118.389V48.6113M89.4999 118.389V74.778M51.9443 118.389V92.2224" stroke="#46FF65" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5 156.767V10.2333C5 8.84537 5.59351 7.51425 6.64997 6.53281C7.70642 5.55137 9.13928 5 10.6333 5H168.367C169.861 5 171.294 5.55137 172.35 6.53281C173.407 7.51425 174 8.84537 174 10.2333V156.767C174 158.155 173.407 159.486 172.35 160.467C171.294 161.449 169.861 162 168.367 162H10.6333C9.13928 162 7.70642 161.449 6.64997 160.467C5.59351 159.486 5 158.155 5 156.767Z" stroke="#46FF65" stroke-width="10"/>
+                    </svg>
+              </div>
+              <h3 class="workflow__step-title">Аналитика</h3>
+              <p class="workflow__step-text">Автоматическая<br>сводка и отчёт в чате</p>
+            </div>
+          </div>
+
+        <div class="stats">
+            <div class="stats__item">
+                <div class="stats__number">+37%</div>
+                <div class="stats__label">Выше вовлечённость</div>
+            </div>
+            <div class="stats__item">
+                <div class="stats__number">В 3 раза</div>
+                <div class="stats__label">Быстрее запуск</div>
+            </div>
+            <div class="stats__item">
+                <div class="stats__number">До 90%</div>
+                <div class="stats__label">Ответов в первый день</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="audience animate-in">
+  <div class="container">
+      <h2 class="audience__title">Кому подойдет?</h2>
+
+      <div class="audience__grid">
+          <div class="audience-card">
+              <div class="audience-card__img" style="background-image: url('/static/img/manager.png');"></div>
+              <div class="audience-card__content">
+                  <h3 class="audience-card__title">Руководителям</h3>
+                  <p class="audience-card__text">Быстрая проверка гипотез и климата в команде</p>
+              </div>
+          </div>
+
+          <div class="audience-card">
+              <div class="audience-card__img" style="background-image: url('/static/img/hr.png');"></div>
+              <div class="audience-card__content">
+                  <h3 class="audience-card__title">HR-отделам</h3>
+                  <p class="audience-card__text">Автоматизация eNPS и пульс-опросов без рутины</p>
+              </div>
+          </div>
+
+          <div class="audience-card">
+              <div class="audience-card__img" style="background-image: url('/static/img/marketers.png');"></div>
+              <div class="audience-card__content">
+                  <h3 class="audience-card__title">Маркетологам</h3>
+                  <p class="audience-card__text">Мгновенная обратная связь от фокус-групп</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="trust-grid">
+          <div class="trust-item">
+              <div class="trust-item__icon">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2DFF7F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 11 12 14 15 10"></polyline></svg>
+              </div>
+              <span class="trust-item__text">Доступ для вашей компании</span>
+          </div>
+
+          <div class="trust-item">
+              <div class="trust-item__icon">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2DFF7F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 11 12 14 15 10"></polyline></svg>
+              </div>
+              <span class="trust-item__text">Анонимные опросы</span>
+          </div>
+
+          <div class="trust-item">
+              <div class="trust-item__icon">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2DFF7F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 11 12 14 15 10"></polyline></svg>
+              </div>
+              <span class="trust-item__text">Без передачи третьим лицам</span>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="reviews animate-in">
+    <div class="container">
+      <h2 class="reviews__title">Отзывы</h2>
+  
+      <div class="reviews__slider">
+  
+        <button class="slider-arrow slider-arrow--prev" aria-label="Предыдущий отзыв">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M15 19l-7-7 7-7"/>
+          </svg>
+        </button>
+  
+        <div class="reviews__carousel-wrapper">
+          <div class="reviews__carousel">
+  
+            <div class="review-card review-card--active">
+              <span class="review-card__quote">“</span>
+              <p class="review-card__text">
+                Раньше мы мучались с Google-формами, которые заполняли от силы 30% сотрудников.
+                С переходом в Telegram вовлеченность взлетела до 85% уже на первой неделе.
+              </p>
+              <div class="review-card__author">
+                <div class="author-avatar"></div>
+              </div>
+            </div>
+  
+            <div class="review-card">
+              <span class="review-card__quote">“</span>
+              <p class="review-card__text">
+                Запускаю опросы по настроению в команде буквально за минуту.
+                Бот сам делает аналитику и подсвечивает проблемы.
+              </p>
+              <div class="review-card__author">
+                <div class="author-avatar"></div>
+              </div>
+            </div>
+  
+            <div class="review-card">
+              <span class="review-card__quote">“</span>
+              <p class="review-card__text">
+                Главное преимущество — анонимность и простота.
+                Все отвечают прямо в мессенджере без логинов и ссылок.
+              </p>
+              <div class="review-card__author">
+                <div class="author-avatar"></div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+  
+        <button class="slider-arrow slider-arrow--next" aria-label="Следующий отзыв">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M9 5l7 7-7 7"/>
+          </svg>
+        </button>
+  
+      </div>
+  
+      <div class="reviews__dots">
+        <span class="dot dot--active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+  
+    </div>
+  </section>
+  
+
+<section class="contact-form animate-in" id="contacts">
+  <div class="container">
+      <h2 class="form-title">Готовы оптимизировать опросы?</h2>
+      <p class="form-subtitle">Оставьте заявку бесплатно</p>
+
+      <form class="main-form" id="lead-form">
+          <input type="text" name="name" placeholder="Имя" class="form-input" required>
+          <div class="form-row">
+              <input type="text" name="telegram" placeholder="Telegram" class="form-input" required>
+              <input type="email" name="email" placeholder="Email" class="form-input" required>
+          </div>
+          <div style="display:none;">
+            <input type="text" name="honeypot" tabindex="-1" autocomplete="off">
+        </div>
+          <button type="submit" class="btn btn--large btn--form" id="submit-btn">Оставить заявку</button>
+      </form>
+  </div>
+</section>
+<div id="form-toast" class="toast" aria-live="polite"></div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__main">
+            <div class="footer__col footer__col--brand">
+                <div class="logo-accent">ИИ-Анкета<span>24</span></div>
+                <p>Умные опросы в Telegram. Повышаем вовлеченность команд и клиентов с помощью искусственного интеллекта.</p>
+                <div class="footer__socials">
+                    </div>
+            </div>
+
+            <div class="footer__col">
+                <h4 class="footer__col-title">Продукт</h4>
+                <nav class="footer__nav">
+                    <a href="#functions" class="footer__link">Функции</a>
+                    <a href="#advantages" class="footer__link">Преимущества</a>
+                    <a href="#" class="footer__link">О нас</a>
+                </nav>
+            </div>
+
+            <div class="footer__col">
+                <h4 class="footer__col-title">Связь</h4>
+                <div class="footer__nav">
+                    <a href="https://t.me/your_bot" class="footer__link footer__link--tg">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                        Написать в Telegram
+                    </a>
+                    <a href="mailto:support@ai24.ru" class="footer__link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        support@ai24.ru
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>© 2026 ИИ-Анкета24. Все права защищены.</p>
+            <div class="footer__legal">
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Оферта</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/static/js/main.js"></script>
+</body>
+</html>
